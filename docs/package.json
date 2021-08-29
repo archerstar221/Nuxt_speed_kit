@@ -1,0 +1,32 @@
+{
+  "name": "nuxt-speedkit-docs",
+  "version": "1.0.0-beta.x",
+  "description": "Nuxt Speedkit Documentation",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Stephan Gerbeth",
+      "email": "stephan.gerbeth@gmail.com"
+    },
+    {
+      "name": "Thorn-Welf Walli",
+      "email": "lammpee@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GrabarzUndPartner/nuxt-speedkit"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "docus": "0.0.10",
+    "nuxt": "2.15.7",
+    "tailwindcss": "2.2.4"
+  }
+}

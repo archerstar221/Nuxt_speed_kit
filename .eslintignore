@@ -1,0 +1,12 @@
+# Common
+node_modules
+dist
+.nuxt
+coverage
+.reports
+publish
+sw.js
+
+lib/plugin.js
+lib/entry.js
+lib/components/SpeedkitLayer.vue

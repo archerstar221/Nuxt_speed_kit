@@ -1,0 +1,82 @@
+{
+  "name": "nuxt-speedkit",
+  "version": "1.2.6",
+  "description": "Nuxt Speedkit takes over the Lighthouse performance optimization of your generated website.",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Stephan Gerbeth",
+      "email": "stephan.gerbeth@gmail.com"
+    },
+    {
+      "name": "Thorn-Welf Walli",
+      "email": "lammpee@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GrabarzUndPartner/nuxt-speedkit"
+  },
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable",
+    "dev": "nuxt example",
+    "build": "nuxt build --config-file example/nuxt.config.js",
+    "generate": "nuxt generate --config-file example/nuxt.config.js --target static",
+    "lint": "npm run lint:es",
+    "lint:es": "eslint --ext .js,.vue .",
+    "lint:report": "eslint --ext .js,.vue -f json-relative -o ./eslint-report.json .",
+    "test": "npm run lint && jest",
+    "jest": "jest",
+    "start": "nuxt start --config-file example/nuxt.config.js --target static",
+    "start:generate": "npm run generate && npm run start"
+  },
+  "dependencies": {
+    "@nuxt/image": "npm:@modified/image@0.0.4-beta4",
+    "bowser": "2.11.0",
+    "browserslist-useragent-regexp": "3.0.0",
+    "defu": "5.0.0",
+    "dynamic-class-list": "1.1.0",
+    "fs-extra": "10.0.0",
+    "serialize-to-js": "3.1.1",
+    "vue-lazy-hydration": "2.0.0-beta.4",
+    "youtube-player": "5.5.2"
+  },
+  "devDependencies": {
+    "pinst": "2.1.6",
+    "nuxt": "2.15.7",
+    "@babel/core": "7.14.6",
+    "@babel/preset-env": "7.14.7",
+    "@babel/preset-typescript": "7.14.5",
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/config-conventional": "12.1.4",
+    "@nuxt/test-utils": "0.2.2",
+    "@nuxtjs/eslint-config": "6.0.1",
+    "@nuxtjs/eslint-module": "3.0.2",
+    "@nuxtjs/stylelint-module": "4.0.0",
+    "babel-eslint": "10.1.0",
+    "babel-jest": "27.0.6",
+    "commitlint": "12.1.4",
+    "core-js": "3.15.2",
+    "eslint": "7.29.0",
+    "eslint-formatter-json-relative": "0.1.0",
+    "eslint-plugin-no-secrets": "0.8.9",
+    "eslint-plugin-scanjs-rules": "0.2.1",
+    "eslint-plugin-security": "1.4.0",
+    "eslint-plugin-sonarjs": "0.7.0",
+    "eslint-plugin-xss": "0.1.10",
+    "husky": "6.0.0",
+    "jest": "27.0.6",
+    "lint-staged": "11.0.0",
+    "lost": "8.3.1",
+    "playwright": "1.12.3",
+    "postcss-nesting": "7.0.1",
+    "stylelint": "13.13.1",
+    "stylelint-config-lost": "0.0.3",
+    "stylelint-config-recess-order": "2.4.0",
+    "stylelint-config-standard": "22.0.0",
+    "webpack-bundle-analyzer": "4.4.2"
+  }
+}

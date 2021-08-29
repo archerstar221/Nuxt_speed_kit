@@ -1,0 +1,18 @@
+{
+  "title": "Nuxt Speedkit",
+  "url": "https://nuxt-speedkit.grabarzundpartner.dev/",
+  "logo": {
+    "light": "/logo-light.svg",
+    "dark": "/logo-dark.svg"
+  },
+  "github": {
+    "repo": "GrabarzUndPartner/nuxt-speedkit",
+    "branch": "main",
+    "dir": "docs",
+    "releases": false
+  },
+  "colors": {
+    "primary": "#E83162",
+    "code": "#E83162"
+  }
+}
